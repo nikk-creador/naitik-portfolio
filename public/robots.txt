@@ -1,0 +1,17 @@
+# Robots.txt for Naitik Bhavsar Portfolio
+
+# Allow all robots to index all content
+User-agent: *
+Allow: /
+
+# Sitemap location (you can update this when you have a sitemap)
+# Sitemap: https://naitik-bhavsar.dev/sitemap.xml
+
+# Crawl delay to be respectful to servers
+Crawl-delay: 1
+
+# Allow search engines to follow links
+Follow: all
+
+# Allow indexing of all pages
+Index: all

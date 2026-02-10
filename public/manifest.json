@@ -1,0 +1,17 @@
+{
+  "name": "Naitik Bhavsar - Portfolio",
+  "short_name": "Naitik Portfolio",
+  "description": "Portfolio of Naitik Bhavsar, a passionate full-stack developer",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#667eea",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

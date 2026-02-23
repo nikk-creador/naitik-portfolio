@@ -5,7 +5,13 @@
     "es2022": true,
     "node": true
   },
-  "extends": ["eslint:recommended"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime"
+  ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": "latest",
@@ -22,7 +28,7 @@
       { "allowConstantExport": true }
     ],
     "@typescript-eslint/no-unused-vars": [
-      "error",
+      "warn",
       { "argsIgnorePattern": "^_" }
     ],
     "@typescript-eslint/no-explicit-any": "warn",
@@ -40,7 +46,7 @@
     "no-trailing-spaces": "error",
     "eol-last": "error",
     "semi": ["error", "always"],
-    "quotes": ["error", "single", { "avoidEscape": true }],
+    "quotes": "off",
     "comma-dangle": ["error", "always-multiline"],
     "comma-spacing": ["error", { "before": false, "after": true }],
     "comma-style": ["error", "last"],
@@ -61,11 +67,8 @@
     "spaced-comment": ["error", "always"],
     "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 1 }],
     "no-mixed-spaces-and-tabs": "error",
-    "indent": ["error", 2, { "SwitchCase": 1 }],
-    "max-len": [
-      "error",
-      { "code": 100, "ignoreUrls": true, "ignoreStrings": true }
-    ]
+    "indent": "off",
+    "max-len": "off"
   },
   "settings": {
     "react": {

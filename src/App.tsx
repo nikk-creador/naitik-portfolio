@@ -7,7 +7,7 @@ import { NAV_SECTIONS } from "./data/Home";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import FloatingIconBackdrop from "./components/layout/FloatingIconBackdrop";
-const Home = React.lazy(() => import("./components/sections/Home"));
+import Home from "./components/sections/Home";
 const BlogDetail = React.lazy(() =>
   import("./components/sections/Blog").then((module) => ({
     default: module.BlogDetail,

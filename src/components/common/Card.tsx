@@ -9,9 +9,9 @@ export type CardProps = Omit<AntCardProps, "variant"> & {
 };
 
 const StyledCard = styled(AntCard, {
-  shouldForwardProp: (prop) => prop !== "variant" && prop !== "hoverable",
-})<CardProps & { variant?: string; hoverable?: boolean }>(
-  ({ variant = "elevated", hoverable = true }) => ({
+  shouldForwardProp: (prop) => prop !== "$variant" && prop !== "$hoverable",
+})<{ $variant?: CardProps["variant"]; $hoverable?: boolean }>(
+  ({ $variant = "elevated", $hoverable = true }) => ({
     borderRadius: GLOBAL_STYLES.borderRadius,
     transition: GLOBAL_STYLES.transition,
     height: "100%",
@@ -19,10 +19,10 @@ const StyledCard = styled(AntCard, {
     flexDirection: "column",
     backgroundColor: COLORS.neutral[50],
 
-    ...(variant === "elevated" && {
+    ...($variant === "elevated" && {
       border: `1px solid ${COLORS.neutral[200]}`,
       boxShadow: "0 12px 30px rgba(0, 0, 0, 0.08)",
-      "&:hover": hoverable
+      "&:hover": $hoverable
         ? {
           transform: "translateY(-6px)",
           boxShadow: "0 20px 46px rgba(0, 0, 0, 0.12)",
@@ -30,10 +30,10 @@ const StyledCard = styled(AntCard, {
         : {},
     }),
 
-    ...(variant === "outlined" && {
+    ...($variant === "outlined" && {
       border: `1px dashed ${COLORS.neutral[900]}`,
       boxShadow: "none",
-      "&:hover": hoverable
+      "&:hover": $hoverable
         ? {
           borderColor: COLORS.neutral[900],
           boxShadow: "0 16px 32px rgba(0, 0, 0, 0.12)",
@@ -41,11 +41,11 @@ const StyledCard = styled(AntCard, {
         : {},
     }),
 
-    ...(variant === "filled" && {
+    ...($variant === "filled" && {
       backgroundColor: COLORS.neutral[100],
       border: `1px solid ${COLORS.neutral[200]}`,
       boxShadow: "none",
-      "&:hover": hoverable
+      "&:hover": $hoverable
         ? {
           backgroundColor: COLORS.neutral[50],
           boxShadow: "0 12px 24px rgba(0, 0, 0, 0.1)",
@@ -78,7 +78,7 @@ const Card: React.FC<CardProps> = ({
   ...props
 }) => {
   return (
-    <StyledCard variant={variant} hoverable={hoverable} {...props}>
+    <StyledCard $variant={variant} $hoverable={hoverable} {...props}>
       {children}
     </StyledCard>
   );

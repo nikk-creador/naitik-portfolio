@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="a" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#061224"/>
+      <stop offset="55%" stop-color="#104a85"/>
+      <stop offset="100%" stop-color="#13b8a6"/>
+    </linearGradient>
+    <radialGradient id="b" cx="84%" cy="18%" r="56%">
+      <stop offset="0%" stop-color="#dcf9ff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#dcf9ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#a)"/>
+  <rect width="1600" height="900" fill="url(#b)"/>
+  <circle cx="230" cy="690" r="320" fill="#68d7ff" fill-opacity="0.22"/>
+  <circle cx="1180" cy="300" r="420" fill="#6ce8d7" fill-opacity="0.18"/>
+  <path d="M0 760 C240 640 440 820 700 710 C980 590 1160 820 1600 650 L1600 900 L0 900 Z" fill="#03101e" fill-opacity="0.48"/>
+  <g stroke="#d9f6ff" stroke-opacity="0.44" fill="none">
+    <path d="M180 590 L520 390 L820 500 L1110 330 L1390 450" stroke-width="3"/>
+    <path d="M180 640 L520 440 L820 550 L1110 380 L1390 500" stroke-width="2"/>
+  </g>
+  <g fill="#f2fcff" fill-opacity="0.9">
+    <circle cx="180" cy="590" r="9"/>
+    <circle cx="520" cy="390" r="11"/>
+    <circle cx="820" cy="500" r="9"/>
+    <circle cx="1110" cy="330" r="12"/>
+    <circle cx="1390" cy="450" r="10"/>
+  </g>
+  <g fill="#effbff" fill-opacity="0.7" font-family="JetBrains Mono, Consolas, monospace" font-size="28">
+    <text x="150" y="180">const useStore = create((set) =&gt; ({</text>
+    <text x="190" y="220">user: null, setUser: (user) =&gt; set({ user })</text>
+    <text x="150" y="260">}))</text>
+  </g>
+</svg>

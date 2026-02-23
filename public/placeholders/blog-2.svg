@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="a" x1="8%" y1="0%" x2="92%" y2="100%">
+      <stop offset="0%" stop-color="#180f2a"/>
+      <stop offset="54%" stop-color="#5b2c81"/>
+      <stop offset="100%" stop-color="#ff7d66"/>
+    </linearGradient>
+    <radialGradient id="b" cx="18%" cy="24%" r="48%">
+      <stop offset="0%" stop-color="#ffe7d8" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ffe7d8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#a)"/>
+  <rect width="1600" height="900" fill="url(#b)"/>
+  <circle cx="1320" cy="680" r="370" fill="#ffb26b" fill-opacity="0.2"/>
+  <circle cx="380" cy="760" r="280" fill="#ff89be" fill-opacity="0.2"/>
+  <path d="M0 640 Q280 500 560 610 T1120 580 T1600 520 L1600 900 L0 900 Z" fill="#2a1138" fill-opacity="0.46"/>
+  <g fill="#fff4ef" fill-opacity="0.8" font-family="JetBrains Mono, Consolas, monospace" font-size="27">
+    <text x="170" y="210">useMemo(() =&gt; compute(items), [items])</text>
+    <text x="170" y="250">useCallback(onSave, [draft])</text>
+    <text x="170" y="290">useEffect(() =&gt; subscribe(), [id])</text>
+  </g>
+  <g stroke="#ffe0d4" stroke-opacity="0.48" fill="none">
+    <ellipse cx="1090" cy="460" rx="240" ry="105" stroke-width="3"/>
+    <ellipse cx="1090" cy="460" rx="300" ry="145" stroke-width="2"/>
+  </g>
+  <g fill="#fff2eb">
+    <circle cx="850" cy="460" r="9"/>
+    <circle cx="1090" cy="315" r="9"/>
+    <circle cx="1330" cy="460" r="9"/>
+    <circle cx="1090" cy="605" r="9"/>
+  </g>
+</svg>

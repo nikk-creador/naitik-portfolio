@@ -10,6 +10,15 @@ export default defineConfig({
   build: {
     outDir: "dist",
     sourcemap: true,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          react: ["react", "react-dom", "react-router-dom"],
+          ui: ["antd", "@ant-design/icons", "styled-components"],
+          motion: ["framer-motion", "react-icons"],
+        },
+      },
+    },
   },
 });
 

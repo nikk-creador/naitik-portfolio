@@ -9,7 +9,7 @@ import { BLOG_POSTS } from "../../data/Blog";
 import { COLORS } from "../../theme/Theme";
 import { Container, SectionWrapper, Card, Button } from "../common/Index";
 import { ScrollCard } from "../common/Animations";
-import type { BlogPost } from "../../types/content";
+import type { BlogPost } from "../../types/Content";
 
 const { Title, Paragraph, Text } = Typography;
 

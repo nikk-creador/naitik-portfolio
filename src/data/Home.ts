@@ -3,7 +3,7 @@ import type {
   NavSection,
   ServiceItem,
   RoleItem,
-} from "../types/content";
+} from "../types/Content";
 
 export const NAV_SECTIONS: NavSection[] = [
   { id: "hero", label: "Home" },
